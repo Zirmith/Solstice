@@ -49,11 +49,11 @@ app.post('/create-instance', (req, res) => {
   userInstances[userId] = { gameName, players, isConnected };
   req.session.userId = userId;
 
-  const verifyLink = `http://localhost:${PORT}/verify/${userId}`;
+  const verifyLink = `https://solstice-6ips.onrender.com/verify/${userId}`;
 
   res.json({
     message: 'Instance created successfully',
-    link: `http://localhost:${PORT}/web-client/${userId}`,
+    link: `https://solstice-6ips.onrender.com/web-client/${userId}`,
     verifyLink,
     userId,
     gameName,
