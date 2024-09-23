@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducing Solstice – The ultimate exploit for Roblox, featuring advanced injection capabilities and unparalleled script execution. Empower your experience with Solstice.">
+    <meta name="keywords" content="Solstice, Roblox exploit, script execution, Lua, injector, Roblox hacks, Solstice exploit">
+    <meta name="author" content="JUNOTHEFLOOF">
+    <meta property="og:title" content="Solstice – The Ultimate Roblox Exploit">
+    <meta property="og:description" content="Unlock your true potential in Roblox with Solstice. Experience top-tier script execution and advanced features like never before.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Solstice – The Ultimate Roblox Exploit">
+    <meta name="twitter:description" content="Unlock your true potential in Roblox with Solstice. Experience top-tier script execution and advanced features like never before.">
+    <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
+    <title>Solstice – The Ultimate Roblox Exploit</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Toastify CSS CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <!-- Design inspired by https://www.authkit.com/ -->
+    <div class="header">
+        <h2><a href="" target="_blank" rel="noopener noreferrer">JUNO</a></h2>
+        <div class="mid-spot" onclick="document.body.classList.toggle('gold');"></div>
+        <button class="contact-btn">
+            <span class="glow"></span>
+            <span class="contact-btn-content">Contact Us</span>
+        </button>
+        <div class="spotlight">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="accent-lines">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <div class="heroSubP">
+        <p>Introducing</p>
+    </div>
+    <div class="hero">
+        <div class="heroT">
+            <h2>Solstice</h2>
+            <h2>Solstice</h2>
+        </div>
+    </div>
+    <p class="heroP">The ultimate Roblox exploit, <br>
+        powered by cutting-edge technology.</p>
+    <div class="mountains">
+        <div></div>
+        <div></div>
+        <div></div>
+        
+    </div>
+    <div class="hero-spacer"></div>
+
+    <div class="content-section">
+        <div class="content-acc">
+            <div></div>
+            <div></div>
+        </div>
+        <p class="subt">Redefining possibilities</p>
+        <h3 class="title">Inject. Execute.<br>
+            Dominate the Game.</h3>
+        <p class="subp">Experience the power of Solstice, the ultimate Roblox exploit. With its robust script execution and flawless injection methods, conquer the game like never before.</p>
+       
+    
+            <button class="copy-btn" onclick="copyToClipboard()">Get Script</button>
+      
+    </div>
+
+   <!-- Toastify JS CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+   
+   <script>
+       function copyToClipboard() {
+           const domain = window.location.origin; // Get the current domain
+           const loadstring = `loadstring(game:HttpGet(\`${domain}/script\`))()`;
+
+           navigator.clipboard.writeText(loadstring).then(() => {
+               // Use Toastify to display a toast notification
+               Toastify({
+                   text: "Loadstring copied to clipboard!",
+                   duration: 3000, // 3 seconds
+                   gravity: "bottom", // Position at the top
+                   position: "center", // Centered horizontally
+                   backgroundColor: "rgba(0, 0, 0, 0.8)", // Transparent black background
+                   close: false // Show close button
+               }).showToast();
+           });
+       }
+   </script>
+
+    <script src="index.js"></script>
+</body>
+</html>
